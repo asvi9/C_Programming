@@ -1,0 +1,100 @@
+#include <stdio.h>  
+// Includes the Standard Input Output header file.
+// Provides printf() function for printing output to the console.
+// Without this, the compiler wouldn't recognize printf().
+
+int main()        
+// Main function - the entry point of every C program.
+// Execution always starts from here.
+// 'int' means this function returns an integer value to the operating system.
+
+{                
+// Opening curly brace - marks the beginning of the main function body.
+// All code inside these braces belongs to main().
+
+    int i = 1;    
+    // Variable declaration AND initialization in one line.
+    // 'int' - declares an integer variable named 'i'.
+    // '= 1' - assigns value 1 to variable i immediately.
+    // Memory is allocated and initialized with value 1.
+
+    while (i <= 5)  
+    // 'while' loop: used for repetitive execution based on a condition.
+    // Syntax: while(condition) { ... }
+    // The loop continues as long as the condition is true.
+    // Condition checked BEFORE each iteration.
+    // Here: loop runs while i is less than or equal to 5.
+
+    {
+        // Opening brace for while loop body.
+        // This block executes repeatedly as long as condition is true.
+
+        printf("%d\n", i);  
+        // printf() prints formatted output to console.
+        // "%d" - format specifier for integer.
+        // '\n' - newline character (moves cursor to next line).
+        // 'i' - the value to print (replaces %d).
+        // This prints the current value of i followed by a newline.
+
+        i++;        
+        // Increment operator: increases value of i by 1.
+        // Equivalent to: i = i + 1;
+        // This is crucial - without this, loop would run forever (infinite loop).
+        // After i becomes 6, condition becomes false and loop stops.
+
+    }
+    // Closing brace for while loop body.
+    // After executing, control goes back to condition check.
+
+    return 0;      
+    // Return statement exits main() and returns 0 to OS.
+    // 0 typically means program executed successfully (no errors).
+    // Since main() returns int, we must provide an integer value.
+
+}
+// Closing curly brace - marks the end of main function.
+// Program terminates here.
+
+
+
+
+
+================================ Complete Flow of Program: ==================================
+
+Start execution
+    ↓
+Include stdio.h header
+    ↓
+Enter main() function
+    ↓
+Declare and initialize i = 1
+    ↓
+Enter while loop:
+    ↓
+    Check condition: i <= 5? (1 <= 5 → true)
+    ↓
+    Execute printf(): prints "1" and newline
+    ↓
+    Execute i++: i becomes 2
+    ↓
+    Check condition: i <= 5? (2 <= 5 → true)
+    ↓
+    Execute printf(): prints "2" and newline
+    ↓
+    Execute i++: i becomes 3
+    ↓
+    (This continues for i = 4, 5)
+    ↓
+    Check condition: i <= 5? (5 <= 5 → true)
+    ↓
+    Execute printf(): prints "5" and newline
+    ↓
+    Execute i++: i becomes 6
+    ↓
+    Check condition: i <= 5? (6 <= 5 → false)
+    ↓
+Exit loop
+    ↓
+Return 0 (success)
+    ↓
+End program
