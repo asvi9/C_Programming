@@ -1,0 +1,48 @@
+======================== 1st part======================================
+Problemn Statement: Develop a program to convert temperature  from Fahrenheit to Celsius. Hint: C= ((F-32)*5)/9  
+
+Solution
+
+#include <stdio.h>
+
+int main()
+{
+    float F, C;
+
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%f", &F);
+
+    C = ((F - 32) * 5) / 9;
+
+    printf("Temperature in Celsius = %.2f", C);
+
+    return 0;
+}
+
+
+
+
+====================================== 2nd part =============================
+
+Problem: Develop a program to find percentage of 5  subjects.   
+
+Slove:
+
+#include <stdio.h>
+
+int main()
+{
+    float s1, s2, s3, s4, s5;
+    float total, percentage;
+
+    printf("Enter marks of 5 subjects: ");
+    scanf("%f %f %f %f %f", &s1, &s2, &s3, &s4, &s5);
+
+    total = s1 + s2 + s3 + s4 + s5;
+    percentage = total / 5;
+
+    printf("Total Marks = %.2f\n", total);
+    printf("Percentage = %.2f%%", percentage);
+
+    return 0;
+}
