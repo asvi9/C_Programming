@@ -1,0 +1,127 @@
+#include <stdio.h>  
+// Includes the Standard Input Output header file.
+// Provides printf() function for printing output.
+// Without this, the compiler wouldn't recognize printf().
+
+int main()        
+// Main function - the entry point of every C program.
+// Execution always starts from here.
+// 'int' means this function returns an integer value.
+
+{                
+// Opening curly brace - marks the beginning of the main function body.
+
+    int i;        
+    // Variable declaration: declares an integer variable named 'i'.
+    // Memory is allocated for this variable on the stack.
+    // Initially contains garbage value until assigned.
+
+    for (i = 1; i <= 10; i++)  
+    // 'for' loop: used for repetitive execution.
+    // Three parts:
+    // 1. i = 1  → Initialization: sets starting value to 1
+    // 2. i <= 10 → Condition: loop continues while true
+    // 3. i++   → Increment: increases i by 1 after each iteration
+
+    {
+        // Opening brace for for loop body.
+
+        if (i == 5)  
+        // 'if' statement: used for conditional execution.
+        // Checks if the condition (i == 5) is true.
+        // '==' is the equality operator (compares values).
+        // If i is exactly 5, this condition becomes true.
+
+        {
+            // Opening brace for if block.
+            
+            break;    
+            // 'break' statement: immediately exits the loop.
+            // When break is executed, the loop terminates completely.
+            // Control jumps to the first statement after the loop.
+            // No further iterations will execute.
+            // Remaining code in the loop body is skipped.
+            
+        }
+        // Closing brace for if block.
+
+        printf("%d ", i);  
+        // printf() prints formatted output to console.
+        // "%d" - format specifier for integer.
+        // " " (space) - prints a space after the number.
+        // 'i' - the value to print.
+        // This prints current value of i followed by a space.
+        // NOTE: This line only executes if i != 5.
+        // When i == 5, break executes before reaching this line.
+
+    }
+    // Closing brace for for loop body.
+
+    return 0;      
+    // Return statement exits main() and returns 0 to OS.
+    // 0 typically means program executed successfully.
+
+}
+// Closing curly brace - marks the end of main function.
+// Program terminates here.
+
+
+
+============================= Complete Flow of Program: =============================
+
+
+Start execution
+    ↓
+Include stdio.h
+    ↓
+Enter main()
+    ↓
+Declare variable i
+    ↓
+Start for loop:
+    ↓
+    Initialize i = 1
+    ↓
+    Check condition: i <= 10? (1 <= 10 → true)
+    ↓
+    Enter loop body:
+        ↓
+        Check if (i == 5)? (1 == 5 → false)
+        ↓
+        Skip if block
+        ↓
+        Execute printf(): prints "1 "
+        ↓
+    End of iteration
+    ↓
+    Increment i → i becomes 2
+    ↓
+    Check condition: i <= 10? (2 <= 10 → true)
+    ↓
+    Enter loop body:
+        ↓
+        Check if (i == 5)? (2 == 5 → false)
+        ↓
+        Execute printf(): prints "2 "
+        ↓
+    (Continues for i = 3, 4)
+    ↓
+    Increment i → i becomes 5
+    ↓
+    Check condition: i <= 10? (5 <= 10 → true)
+    ↓
+    Enter loop body:
+        ↓
+        Check if (i == 5)? (5 == 5 → true)
+        ↓
+        Enter if block
+        ↓
+        Execute break → EXIT LOOP IMMEDIATELY
+        ↓
+    Loop terminates (i is still 5)
+    ↓
+Skip rest of loop iterations (6, 7, 8, 9, 10 never execute)
+    ↓
+Return 0
+    ↓
+End program
