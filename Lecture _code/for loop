@@ -1,0 +1,95 @@
+#include <stdio.h>  
+// This is a preprocessor directive that includes the Standard Input Output header file.
+// It provides functions like printf() and scanf() which are used for input/output operations.
+// Without this, the compiler wouldn't recognize printf().
+
+int main()        
+// This is the main function - the entry point of every C program.
+// Execution always starts from main().
+// 'int' before main indicates that this function returns an integer value to the operating system.
+// The empty parentheses mean this function takes no arguments.
+
+{                
+// Opening curly brace marks the beginning of the main function's body.
+// All code inside these braces belongs to the main function.
+
+    int i;        
+    // Variable declaration: declares an integer variable named 'i'.
+    // 'int' is a data type that stores whole numbers.
+    // Memory is allocated for this variable on the stack.
+    // Initially, it contains garbage value until assigned.
+
+    for (i = 1; i <= 10; i++)  
+    // 'for' loop: used for repetitive execution of code a fixed number of times.
+    // Three parts inside parentheses:
+    // 1. i = 1  → Initialization: sets starting value of i to 1 (executed once at beginning)
+    // 2. i <= 10 → Condition: loop continues as long as this is true (checked before each iteration)
+    // 3. i++   → Increment: increases i by 1 after each iteration (i++ means i = i + 1)
+    // When condition becomes false (i becomes 11), loop terminates.
+
+    {
+        // Opening brace for the for loop body.
+        // This block of code executes repeatedly for i = 1, 2, 3, ..., 10.
+
+        printf("%d\n", i);  
+        // printf() is a function from stdio.h used to print formatted output to the console.
+        // "%d" is a format specifier for printing integer values.
+        // '\n' is the newline character - moves cursor to next line after printing.
+        // 'i' is the value that replaces %d in the output.
+        // So it prints: 1, then 2, then 3, ... up to 10, each on a new line.
+
+    }
+    // Closing brace for the for loop body.
+    // After printing, control goes back to i++ and condition check.
+
+    return 0;      
+    // 'return' statement exits the main function and returns a value to the operating system.
+    // Returning 0 typically indicates successful program execution (no errors).
+    // Any non-zero value usually indicates an error or abnormal termination.
+    // Since main() returns int, we must provide an integer value.
+
+}
+// Closing curly brace marks the end of the main function's body.
+// Program execution ends here.
+
+
+
+
+
+
+=================================== Complete Flow of Program: ===================
+
+
+  Start execution
+    ↓
+Include stdio.h header
+    ↓
+Enter main() function
+    ↓
+Declare variable 'i' (memory allocated)
+    ↓
+Start for loop:
+    ↓
+    Initialize i = 1
+    ↓
+    Check condition: i <= 10? (1 <= 10 → true)
+    ↓
+    Execute printf(): prints "1" and newline
+    ↓
+    Increment i → i becomes 2
+    ↓
+    Check condition: i <= 10? (2 <= 10 → true)
+    ↓
+    Execute printf(): prints "2" and newline
+    ↓
+    (This continues for i = 3, 4, 5, 6, 7, 8, 9, 10)
+    ↓
+    Increment i → i becomes 11
+    ↓
+    Check condition: i <= 10? (11 <= 10 → false)
+    ↓
+Exit loop
+    ↓
+Return 0 (success)
+    ↓
+End program
