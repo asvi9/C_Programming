@@ -1,0 +1,29 @@
+What is a control structure?
+What is decision making?
+What is an if statement?
+What is an if-else statement?
+What is an else-if ladder?
+What is nested if?
+What is a switch statement?
+What is the purpose of break in switch?
+What is the conditional operator?
+Why is ?: called a ternary operator?
+What is looping?
+What is an entry-controlled loop?
+What is an exit-controlled loop?
+Name the loops available in C.
+What is a for loop?
+What is a while loop?
+What is a do-while loop?
+What is a jump statement?
+What is break?
+What is continue?
+
+======================= Important Difference Questions ======================
+
+Q1. if vs switch
+Q2. while vs do-while
+Q3. for vs while
+Q4. break vs continue
+Q5. Entry-controlled vs exit-controlled loop
+Q6. if-else vs conditional operator
