@@ -16,9 +16,6 @@ Define flowchart and explain its symbols.
 Differentiate algorithm and flowchart.
 
 
-
-
-
 ===================================== Part B — Algorithm & Flowchart ========================
 
 Add two numbers.
@@ -36,4 +33,86 @@ Check whether a student has passed or failed.
 
 =================== unit 2 ======================================
 
+
+
+Variables & Constants
+What is a variable?
+What is a constant?
+What is variable declaration?
+What is initialization?
+What are the rules for naming identifiers?
+Is C case-sensitive?
+
+========================== Data Types =============================
+
+What is a data type?
+Name the basic data types in C.
+Difference between float and double.
+What is char?
+What are type modifiers?
+What is unsigned?
+
+============================ Tokens ==================================
+What is a token?
+What are C tokens?
+What are keywords?
+What are identifiers?
+What are constants?
+What are operators?
+What are punctuators?
+
+======================= Operators ============================
+
+
+What are arithmetic operators?
+Difference between = and ==.
+What is % operator?
+What is the difference between ++i and i++?
+What is a relational operator?
+What are logical operators?
+What is the conditional operator?
+
+======================= Type Conversion =================================
+
+
+What is type conversion?
+What is implicit conversion?
+What is type casting?
+What is the syntax of type casting?
+What is the output of 10 / 3 when both are integers?
+How can you get a floating-point result from integer division?
+
+
+============================  Practical Programs ===================================
+
+  
+Print Hello World.
+Add two numbers.
+Subtract two numbers.
+Multiply two numbers.
+Divide two numbers.
+Find remainder.
+Calculate area of circle.
+Calculate simple interest.
+Calculate total and average marks.
+Convert Celsius to Fahrenheit.
+
+
+============================== Operator Practice ============
+
+
+Demonstrate arithmetic operators.
+Demonstrate relational operators.
+Demonstrate logical operators.
+Demonstrate assignment operators.
+Demonstrate increment/decrement operators.
+Find the largest of two numbers using the conditional operator.
+
+
+===================== Type Conversion Practice ============================
+
+Demonstrate implicit type conversion.
+Demonstrate explicit type casting.
+Demonstrate integer division.
+Calculate average using type casting.
 
