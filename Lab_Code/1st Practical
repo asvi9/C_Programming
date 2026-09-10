@@ -1,0 +1,53 @@
+========================= 3. Develop a program to print “Hello World”. ==============================
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World");
+
+    return 0;
+}
+
+============================ 4. Develop a program to print your address i) using single printf ii) using multiple printf.=====================
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Ashwani Mishra\nAhmedabad, Gujarat\nIndia");
+    
+    return 0;
+}
+====================================================================  2nd ============================
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Ashwani Mishra\n");
+    printf("Ahmedabad, Gujarat\n");
+    printf("India");
+    
+    return 0;
+}
+
+
+=========================== 5. Develop a program to print addition of 2  numbers (with scanf). =====================
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b, sum;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    sum = a + b;
+
+    printf("Addition = %d", sum);
+
+    return 0;
+}
